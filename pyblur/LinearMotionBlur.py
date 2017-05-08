@@ -62,3 +62,6 @@ def randomAngle(kerneldim):
     validLineAngles = np.linspace(0,180, numDistinctLines, endpoint = False)
     angleIdx = np.random.randint(0, len(validLineAngles))
     return int(validLineAngles[angleIdx])
+
+def drawKernel(kernel):
+    pass
