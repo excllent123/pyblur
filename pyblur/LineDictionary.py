@@ -12,11 +12,9 @@ class LineDictionary:
         lines = {}
         # 4
         lines[0]      = [1,0,1,2]
-        #lines[45]     = [2,0,0,2]
-        lines[45]     = [0,0,2,2]
+        lines[45]     = [2,0,0,2]
         lines[90]     = [0,1,2,1]
-        #lines[135]    = [0,0,2,2]
-        lines[135]    = [2,0,0,2]
+        lines[135]    = [0,0,2,2]
         self.lines[3] = lines
         return
     
@@ -77,25 +75,29 @@ class LineDictionary:
     def Create11x11Lines(self):
         lines = {}
         # 20 
-        lines[0]   =  [6,0,6,12]
-        lines[9]   =  [5,0,3,8]
-        lines[18]  =  [6,0,2,8]
-        lines[27]  =  [7,0,1,8]
-        lines[36]  =  [8,0,0,8]
-        lines[45]  =  [8,1,0,7]
-        lines[54]  =  [8,2,0,6]
-        lines[63]  =  [8,3,0,5]
-        lines[72]  =  [8,4,0,4]
-        lines[81]  =  [0,3,8,5]
-        lines[90]  =  [0,2,8,6]
-        lines[99]  =  [0,1,8,7]
-        lines[108] =  [0,0,8,8]
-        lines[117] =  [1,0,7,8]
-        lines[126] =  [2,0,6,8]
-        lines[135] =  [3,0,5,8]
-        lines[144] =  []
-        lines[153] =  []
-        lines[162] =  []
-        lines[171] =  []
+        lines[0]   =  [5,0,5,10]
+        lines[9]   =  [6,0,4,10]
+        lines[18]  =  [7,0,3,10]
+        lines[27]  =  [8,0,2,10]
+        lines[36]  =  [9,0,1,10]
+        lines[45]  =  [10,0,0,10]
+        lines[54]  =  [10,1,0,9]
+        lines[63]  =  [10,2,0,8]
+        lines[72]  =  [10,3,0,7]
+        lines[81]  =  [10,4,0,6]
+        lines[90]  =  [10,5,0,5]
+        lines[99]  =  [0,4,10,6]
+        lines[108] =  [0,3,10,7]
+        lines[117] =  [0,2,10,8]
+        lines[126] =  [0,1,10,9]
+        lines[135] =  [0,0,10,10]
+        lines[144] =  [1,0,9,10]
+        lines[153] =  [2,0,8,10]
+        lines[162] =  [3,0,7,10]
+        lines[171] =  [4,0,6,10]
         self.lines[11] = lines
         return
+
+    def CreateNxNLines(N):
+        num = math.floor(N/2) * 4
+        pass
