@@ -1,5 +1,8 @@
 #Pyblur
 ##Python image blurring routines.
+
+this fork is for python3 version, and maked some changes
+
 Pyblur is a collection of simple image blurring routines.<br>
 It supports Gaussian, Disk, Box, and Linear Motion Blur Kernels as well as the Point Spread Functions
 used in [Convolutional Neural Networks for Direct Text Deblurring](http://www.fit.vutbr.cz/~ihradis/CNN-Deblur/).<br>
@@ -50,12 +53,12 @@ Randomized kernel size (between 3 and 9)
 ###Linear Motion Blur
 Blurs image using a Line Kernel
 
-	blurred = LinearMotionBlur(img, dim, angle, linetype)
+	blurred = LinearMotionBlur(img, dim, angle)
 
 ####Parameters
 * `dim` Kernel Size: {3,5,7,9} <br>
 * `angle` Angle of the line of motion. Will be floored to the closest one available for the given kernel size. <br>
-* `linetype = {left, right, full}` Controls whether the blur kernel will be applied in full or only the left/right halves of it. <br>
+
 
 Randomized kernel size, angle, and line type
 
